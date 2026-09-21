@@ -5,7 +5,8 @@ import Image from 'next/image';
 import { Body, H1, H2, H3 } from '@/src/components/Typography';
 import { ButtonLink } from '@/src/components/ButtonLink';
 import { Section } from '@/src/components/Section';
-import { pickUnifiPlaceholder } from '@/src/content/unifiAssets';
+import { pickUnifiPlaceholder, withBasePath } from '@/src/content/unifiAssets';
+import RelatedEnergyServices from '@/src/components/RelatedEnergyServices';
 
 const paperCoverage = [
   'The long-run trend in UK electricity prices, and why the crisis reset the baseline rather than reversing it.',
@@ -73,7 +74,7 @@ export default function TheEnergyTrapClient() {
             </Body>
             <div className="mt-8 flex flex-col sm:flex-row gap-4">
               <a
-                href="/papers/The_Energy_Trap.pdf"
+                href={withBasePath('/papers/The_Energy_Trap.pdf')}
                 className="inline-flex items-center gap-2 rounded-sm bg-white px-8 py-4 text-lg font-medium text-unifi-dark transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:bg-unifi-light hover:shadow-lg"
               >
                 <ArrowDownToLine className="w-5 h-5" />
@@ -170,7 +171,7 @@ export default function TheEnergyTrapClient() {
 
           <div className="pt-2 flex flex-col sm:flex-row gap-4">
             <a
-              href="/papers/The_Energy_Trap.pdf"
+              href={withBasePath('/papers/The_Energy_Trap.pdf')}
               className="inline-flex items-center gap-2 rounded-sm bg-unifi-dark px-8 py-4 text-lg font-medium text-white transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-0.5 hover:bg-black hover:shadow-lg"
             >
               <ArrowDownToLine className="w-5 h-5" />
@@ -179,6 +180,36 @@ export default function TheEnergyTrapClient() {
           </div>
         </div>
       </Section>
+          <RelatedEnergyServices
+        heading="Act on what the paper describes"
+        intro="The compounding cost of wasted energy is only avoidable once you can see where it is going."
+        links={[
+          {
+            href: '/energy/monitoring',
+            label: 'Energy Monitoring',
+            description: 'See which circuits, systems and appliances are actually using energy.',
+            service: 'monitoring',
+          },
+          {
+            href: '/energy/monitoring/energy-clamp-meters',
+            label: 'Energy Clamp Meters',
+            description: 'Circuit-level visibility across lighting, HVAC, compressors and fixed plant.',
+            service: 'clamp-meters',
+          },
+          {
+            href: '/energy/technology',
+            label: 'Our Technology',
+            description: 'LED, smart sockets, heating, HVAC and solar — the measures that deliver the saving.',
+            service: 'technology',
+          },
+          {
+            href: '/energy/carbon-reporting',
+            label: 'Carbon Reporting with TrackZero',
+            description: 'Turn energy and carbon data into a reportable, coordinated action plan.',
+            service: 'trackzero',
+          },
+        ]}
+      />
     </>
   );
 }

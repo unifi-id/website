@@ -5,6 +5,7 @@ import { Section } from '@/src/components/Section';
 import Image from 'next/image';
 import { pickUnifiPlaceholder } from '@/src/content/unifiAssets';
 import { CheckCircle, PoundSterling, CreditCard, TrendingUp, FileText } from 'lucide-react';
+import RelatedEnergyServices from '@/src/components/RelatedEnergyServices';
 
 export default function EnergyFundingOptionsClient() {
   const heroImage = pickUnifiPlaceholder('hero', 'energy-funding');
@@ -25,7 +26,7 @@ export default function EnergyFundingOptionsClient() {
               Funding Options
             </H1>
             <Body className="text-lg md:text-xl text-white/85 max-w-3xl mb-10 animate-fade-in-up">
-              Multiple funding routes available to support your building upgrade programme with zero upfront capital required.
+              Multiple funding routes are available to support your building upgrade programme, including options that reduce or remove upfront capital, subject to eligibility and project economics.
             </Body>
           </div>
         </div>
@@ -117,12 +118,42 @@ export default function EnergyFundingOptionsClient() {
           <Body className="mb-8 text-gray-600">
             Let our financing specialists identify the best funding route for your specific requirements.
           </Body>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4">
             <ButtonLink href="/energy/survey">Book Free Survey</ButtonLink>
             <ButtonLink href="/energy/hub" variant="secondary">Back to Energy Hub</ButtonLink>
           </div>
         </div>
       </Section>
+          <RelatedEnergyServices
+        heading="Where this leads next"
+        intro="Funding is one part of the picture. Evidence of where energy is going usually strengthens the case."
+        links={[
+          {
+            href: '/energy/technology',
+            label: 'Our Technology',
+            description: 'LED, smart sockets, heating, HVAC and solar — the measures that deliver the saving.',
+            service: 'technology',
+          },
+          {
+            href: '/energy/monitoring',
+            label: 'Energy Monitoring',
+            description: 'See which circuits, systems and appliances are actually using energy.',
+            service: 'monitoring',
+          },
+          {
+            href: '/energy/carbon-reporting',
+            label: 'Carbon Reporting with TrackZero',
+            description: 'Turn energy and carbon data into a reportable, coordinated action plan.',
+            service: 'trackzero',
+          },
+          {
+            href: '/energy/certificates/non-domestic-epc',
+            label: 'Non-Domestic EPCs',
+            description: 'Understand a building’s calculated rating and the improvements behind it.',
+            service: 'non-domestic-epc',
+          },
+        ]}
+      />
     </>
   );
 }

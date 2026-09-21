@@ -4,7 +4,12 @@ import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { MotionProvider } from '@/src/components/motion';
+import AnalyticsProvider from '@/src/components/AnalyticsProvider';
 import { buildOrganizationSchema } from '@/src/lib/schema';
+
+// Cookieless analytics. Set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. "unifi.id") to activate;
+// while unset, no analytics script is served and event calls no-op safely.
+const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -56,10 +61,11 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: ['/unifi-assets/unifid-logo.png'],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  // A base path means a preview deployment (e.g. the GitHub project-page demo), which
+  // must stay out of search results so it can't compete with unifi.id itself.
+  robots: process.env.NEXT_PUBLIC_BASE_PATH
+    ? { index: false, follow: false }
+    : { index: true, follow: true },
 };
 
 
@@ -72,6 +78,13 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script type="text/javascript" src="https://secure.leadforensics.com/js/52873.js"></script>
+        {plausibleDomain ? (
+          <script
+            defer
+            data-domain={plausibleDomain}
+            src="https://plausible.io/js/script.tagged-events.js"
+          ></script>
+        ) : null}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(buildOrganizationSchema()) }}
@@ -81,6 +94,7 @@ export default function RootLayout({
         <noscript>
           <img alt="" src="https://secure.leadforensics.com/52873.png" style={{ display: 'none' }} />
         </noscript>
+        <AnalyticsProvider />
         <MotionProvider>
           <Header />
           <main className="flex-1">{children}</main>
