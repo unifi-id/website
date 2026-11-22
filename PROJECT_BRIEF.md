@@ -120,7 +120,7 @@ Act as the main problem to solution index.
 **Structure**
 - Hero
 - Filtered solution cards
-- Routes to Cortex, FireGuard, and Energy
+- Routes to Cortex and FireGuard
 
 ---
 

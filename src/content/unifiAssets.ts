@@ -103,10 +103,16 @@ export const imageBySeed: Record<string, string> = {
 
 export type PlaceholderKind = 'hero' | 'card' | 'logo';
 
+// Single source of truth for the deployment base path. A bare "/" or a trailing slash
+// still means the site sits at the root of its domain, so normalise both away. Every
+// consumer must agree on what "no base path" means, or a root deploy can be mistaken
+// for a preview deploy. Matches the normalisation in next.config.js.
+export const basePath = (process.env.NEXT_PUBLIC_BASE_PATH || '').trim().replace(/\/+$/, '');
+
 export function withBasePath(path: string) {
   // GitHub Pages serves this repo under /<repo>/, so absolute /unifi-assets/... URLs 404.
   // We inject NEXT_PUBLIC_BASE_PATH during the Pages build to fix asset paths.
-  const base = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const base = basePath;
   if (!base) return path;
   const normBase = base.startsWith('/') ? base : `/${base}`;
   // avoid double slashes

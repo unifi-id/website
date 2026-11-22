@@ -6,6 +6,7 @@ import Footer from '@/components/Footer';
 import { MotionProvider } from '@/src/components/motion';
 import AnalyticsProvider from '@/src/components/AnalyticsProvider';
 import { buildOrganizationSchema } from '@/src/lib/schema';
+import { basePath } from '@/src/content/unifiAssets';
 
 // Cookieless analytics. Set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. "unifi.id") to activate;
 // while unset, no analytics script is served and event calls no-op safely.
@@ -62,8 +63,9 @@ export const metadata: Metadata = {
     images: ['/unifi-assets/unifid-logo.png'],
   },
   // A base path means a preview deployment (e.g. the GitHub project-page demo), which
-  // must stay out of search results so it can't compete with unifi.id itself.
-  robots: process.env.NEXT_PUBLIC_BASE_PATH
+  // must stay out of search results so it can't compete with unifi.id itself. Use the
+  // normalised value: a bare "/" is the root deploy and must stay indexable.
+  robots: basePath
     ? { index: false, follow: false }
     : { index: true, follow: true },
 };
