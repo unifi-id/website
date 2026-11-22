@@ -165,7 +165,7 @@ const faqs: FaqItem[] = [
   {
     question: 'Do all UK schools need a Climate Action Plan?',
     answer:
-      'The Department for Education expects education settings in England — including maintained schools, academies, multi-academy trusts, independent schools, special schools, and early years settings — to have sustainability leadership and a Climate Action Plan in place. DfE does not prescribe a single template or storage method, and there is no requirement for every setting to publish its plan. For most schools the practical challenge is keeping the plan current, measurable and connected to action.',
+      'The Department for Education expects education settings in England - including maintained schools, academies, multi-academy trusts, independent schools, special schools, and early years settings - to have sustainability leadership and a Climate Action Plan in place. DfE does not prescribe a single template or storage method, and there is no requirement for every setting to publish its plan. For most schools the practical challenge is keeping the plan current, measurable and connected to action.',
   },
   {
     question: 'What is the difference between maintained schools and academies for carbon reporting?',
@@ -175,7 +175,7 @@ const faqs: FaqItem[] = [
   {
     question: 'Do independent schools need to comply with DfE climate requirements?',
     answer:
-      "The DfE's Sustainability and Climate Change Strategy applies across education settings, and independent schools are regulated by the department. They are expected to have sustainability leadership and a Climate Action Plan covering decarbonisation, adaptation, biodiversity, and climate education — the same core pillars as state-funded schools.",
+      "The DfE's Sustainability and Climate Change Strategy applies across education settings, and independent schools are regulated by the department. They are expected to have sustainability leadership and a Climate Action Plan covering decarbonisation, adaptation, biodiversity, and climate education - the same core pillars as state-funded schools.",
   },
   {
     question: 'When do academy trusts need SECR reporting?',
@@ -281,7 +281,7 @@ export default function CarbonReportingClient() {
               <Lead className="mt-5 max-w-3xl text-white/85">
                 Through our partnership with TrackZero, Unifi.id helps councils, schools, academy
                 trusts and other organisations bring carbon data, actions and progress into one
-                structured platform — without relying on disconnected documents and spreadsheets.
+                structured platform - without relying on disconnected documents and spreadsheets.
               </Lead>
 
               <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -332,8 +332,8 @@ export default function CarbonReportingClient() {
             </div>
             <H2 className="mb-5">One Reporting Framework Across Your Council&apos;s Schools, Buildings and Services</H2>
             <Body className="mb-4">
-              Councils report carbon across a wide and varied estate — maintained schools, offices,
-              community buildings and operational sites — usually pieced together from different
+              Councils report carbon across a wide and varied estate - maintained schools, offices,
+              community buildings and operational sites - usually pieced together from different
               teams, templates and reporting periods. TrackZero gives the council one consistent
               framework to bring all of it together.
             </Body>
@@ -375,7 +375,7 @@ export default function CarbonReportingClient() {
               {
                 icon: TrendingDown,
                 title: 'Connect reporting to delivery',
-                body: 'Use the evidence to open the right next conversation for each site — from behavioural change and Energy Clamp Meters to Smart Sockets, LED, heating, HVAC or solar.',
+                body: 'Use the evidence to open the right next conversation for each site - from behavioural change and Energy Clamp Meters to Smart Sockets, LED, heating, HVAC or solar.',
               },
             ].map(({ icon: Icon, title, body }) => (
               <Card key={title} withImage={false} className="border-unifi-blue/10 bg-unifi-light">

@@ -41,7 +41,7 @@ export default function CarbonReportingSection() {
           <Text variant="body">
             Through our partnership with TrackZero, Unifi.id helps councils, schools, academy trusts
             and other organisations bring carbon data, actions and progress into one structured
-            platform — without relying on disconnected documents and spreadsheets.
+            platform - without relying on disconnected documents and spreadsheets.
           </Text>
         </div>
 

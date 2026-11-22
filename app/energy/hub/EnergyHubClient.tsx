@@ -5409,7 +5409,7 @@ export default function EnergyHubClient() {
           <div className="bg-unifi-blue rounded-3xl p-12 text-left text-white max-w-4xl mx-auto">
             <H2 className="text-white mb-6">Ready to Start Your Decarbonisation Journey?</H2>
             <Body className="text-white/80 text-lg mb-8">
-              Start with measurement, a certificate or a specific upgrade — and build the evidence
+              Start with measurement, a certificate or a specific upgrade - and build the evidence
               for the next step across your estate.
             </Body>
             <div className="flex flex-wrap justify-center gap-4">

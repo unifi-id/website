@@ -137,7 +137,7 @@ export default function EnergyEnergyClubClient() {
           {
             href: '/energy/technology',
             label: 'Our Technology',
-            description: 'LED, smart sockets, heating, HVAC and solar — the measures that deliver the saving.',
+            description: 'LED, smart sockets, heating, HVAC and solar - the measures that deliver the saving.',
             service: 'technology',
           },
           {
