@@ -17,7 +17,7 @@ import {
 type MainTab = "solutions" | "detection" | "fire";
 
 // Sub-tab types
-type SolutionsSubTab = "overview" | "access" | "fire-safety" | "occupancy" | "insights" | "energy";
+type SolutionsSubTab = "overview" | "access" | "fire-safety" | "occupancy" | "insights";
 type DetectionSubTab = "overview" | "sense" | "flow" | "cognito" | "echo";
 type FireSubTab = "overview" | "fireguard" | "compliance";
 
@@ -139,10 +139,6 @@ function SolutionsTab({ subTab, setSubTab }: { subTab: SolutionsSubTab; setSubTa
             <span className="text-primary mt-1">•</span>
             <span><strong>Operational Insights</strong> – Understand the causes behind trends, not just the patterns.</span>
           </li>
-          <li className="flex items-start gap-2">
-            <span className="text-primary mt-1">•</span>
-            <span><strong>Energy Performance</strong> – Align energy use with real demand, reducing cost and carbon.</span>
-          </li>
         </ul>
         <p className="text-gray-700 italic">
           This is building intelligence, applied with purpose - tailored to the needs of your sector, and proven to deliver results.
@@ -157,7 +153,6 @@ function SolutionsTab({ subTab, setSubTab }: { subTab: SolutionsSubTab; setSubTa
           { id: "fire-safety" as const, label: "Fire Safety" },
           { id: "occupancy" as const, label: "Live Occupancy" },
           { id: "insights" as const, label: "Insights" },
-          { id: "energy" as const, label: "Energy" },
         ].map((tab) => (
           <button
             key={tab.id}
@@ -179,7 +174,6 @@ function SolutionsTab({ subTab, setSubTab }: { subTab: SolutionsSubTab; setSubTa
       {subTab === "fire-safety" && <FireSafety />}
       {subTab === "occupancy" && <LiveOccupancy />}
       {subTab === "insights" && <OperationalInsights />}
-      {subTab === "energy" && <EnergyPerformance />}
     </div>
   );
 }
@@ -480,62 +474,6 @@ function OperationalInsights() {
       </div>
       <div className="text-left">
         <ButtonLink href="/contact">Learn More About Insights</ButtonLink>
-      </div>
-    </div>
-  );
-}
-
-function EnergyPerformance() {
-  return (
-    <div className="space-y-8">
-      <div className="bg-green-50 p-8 rounded-xl border border-green-200">
-        <H3 className="text-2xl font-bold text-green-900 mb-4">Flow: Demand-Driven Energy Optimization</H3>
-        <p className="text-green-700 mb-6">
-          Flow aligns your building's energy consumption with actual human demand. By providing real-time occupancy signals to your BMS, lighting, and HVAC systems, Flow eliminates the waste of heating and lighting empty spaces, delivering immediate carbon and cost reductions.
-        </p>
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h4 className="font-bold text-green-900 mb-3">Key Capabilities</h4>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>Real-time occupancy-based HVAC and lighting control</span>
-              </li>
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>Measurable carbon reduction tracking and reporting</span>
-              </li>
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>Integration with existing building management systems</span>
-              </li>
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>ESG compliance data and performance verification</span>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold text-green-900 mb-3">Use Cases</h4>
-            <ul className="space-y-2">
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>Net-zero transition and decarbonization initiatives</span>
-              </li>
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>Operational cost reduction in large estates</span>
-              </li>
-              <li className="flex items-start gap-2 text-green-700">
-                <span className="text-primary mt-1">•</span>
-                <span>Green building certification support (LEED, BREEAM)</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="text-left">
-        <ButtonLink href="/energy/hub">Explore Energy Solutions</ButtonLink>
       </div>
     </div>
   );
