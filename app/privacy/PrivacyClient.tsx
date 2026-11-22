@@ -12,7 +12,7 @@ export default function PrivacyClient() {
             Privacy Policy (GDPR-Compliant)
           </H1>
           <Body className="text-lg text-gray-600">
-            Last Updated: January 2025
+            Last Updated: November 2026
           </Body>
         </div>
       </Section>
@@ -47,6 +47,31 @@ export default function PrivacyClient() {
               <li>To deliver insights through our SaaS platform</li>
               <li>For legal and compliance purposes</li>
             </ul>
+          </div>
+
+          <div>
+            <H2 className="text-2xl font-bold text-gray-900 mb-4">Business Contacts at Schools and Other Organisations</H2>
+            <div className="space-y-4">
+              <Body className="text-gray-700">
+                <strong>What we hold.</strong> Your name, job title, the organisation you work for, and your work email address and phone number.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>Where we got it.</strong> From you, from your organisation&apos;s public website, or from the government&apos;s Get Information About Schools register.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>Why we use it.</strong> To send you occasional emails about energy, lighting, carbon measurement and related funding for your organisation, and to invite you to take part in research such as our schools energy survey. Our lawful basis is legitimate interests: it is in our interest, and we believe in yours, to make you aware of relevant services and research. We have assessed that this does not override your rights, and you can object at any time.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>Who we share it with.</strong> We do not sell or share your details. We use trusted service providers to store data and send email, under contracts that protect it.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>How long we keep it.</strong> Until you ask us to stop, you leave the role, or 24 months after we last had any contact with you. If you unsubscribe, we keep your email address on a &quot;do not contact&quot; list so we never email you again.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>Your right to object.</strong> You can object to our use of your details for marketing at any time, and we will stop. Use the unsubscribe link in any of our emails, or email{' '}
+                <a href="mailto:privacy@unifi.id" className="text-unifi-blue hover:underline font-medium">privacy@unifi.id</a>.
+              </Body>
+            </div>
           </div>
 
           <div>
