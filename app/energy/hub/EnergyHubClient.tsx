@@ -3179,8 +3179,8 @@ export default function EnergyHubClient() {
                             [
                               "Finance your LED upgrade without touching your capital budget",
                               "Third-party finance can cover the upfront installation cost",
-                              "Immediate positive cash flow from month one",
-                              "Energy cost reductions exceed financing payments from day one"
+                              "Cash flow set out clearly in the business case",
+                              "Energy cost reductions can offset the financing payments"
                             ].map((item, i) => (
                               <li key={i} className="flex gap-3 items-start">
                                 <CheckCircle className="w-5 h-5 text-unifi-green flex-shrink-0 mt-1" />
@@ -3515,8 +3515,8 @@ export default function EnergyHubClient() {
                             [
                               "Finance heating and HVAC upgrades without touching your capital budget",
                               "Third-party funding covers equipment and installation costs",
-                              "Positive cash flow from month one",
-                              "Energy cost reductions exceed financing payments from day one"
+                              "Cash flow set out clearly in the business case",
+                              "Energy cost reductions can offset the financing payments"
                             ].map((item, i) => (
                               <li key={i} className="flex gap-3 items-start">
                                 <CheckCircle className="w-5 h-5 text-unifi-green flex-shrink-0 mt-1" />
@@ -3697,8 +3697,8 @@ export default function EnergyHubClient() {
                             [
                               "Finance solar and renewable installations without touching your capital budget",
                               "Third-party funding covers equipment and installation costs",
-                              "Positive cash flow from month one",
-                              "Energy cost reductions exceed financing payments from day one"
+                              "Cash flow set out clearly in the business case",
+                              "Energy cost reductions can offset the financing payments"
                             ].map((item, i) => (
                               <li key={i} className="flex gap-3 items-start">
                                 <CheckCircle className="w-5 h-5 text-unifi-green flex-shrink-0 mt-1" />
@@ -4417,7 +4417,7 @@ export default function EnergyHubClient() {
                                 'Consistent quality across all schools',
                                 'Significant cost savings group-wide',
                                 'Meet shared ESG targets',
-                                'No upfront capital required',
+                                'Funding that can reduce or remove upfront capital',
                               ].map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                   <CheckCircle className="w-5 h-5 text-unifi-blue flex-shrink-0 mt-1" />
@@ -4444,7 +4444,7 @@ export default function EnergyHubClient() {
                               title: 'Shared Budgets',
                               desc: 'Limited budgets must be stretched across multiple schools.',
                               features: [
-                                'Funded solutions with no upfront cost',
+                                'Funding that can reduce or remove upfront capital',
                                 'Group-wide energy savings',
                                 'Reduced maintenance costs',
                                 'Better value through scale',
@@ -4562,7 +4562,7 @@ export default function EnergyHubClient() {
                                 'Improve workplace productivity and wellbeing',
                                 'Meet ESG and MEES compliance requirements',
                                 'Increase asset value and marketability',
-                                'Funded solutions with no upfront capital',
+                                'Funding that can reduce or remove upfront capital',
                               ].map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                   <CheckCircle className="w-5 h-5 text-unifi-blue flex-shrink-0 mt-1" />
@@ -4651,7 +4651,7 @@ export default function EnergyHubClient() {
                                 'Create engaging customer experiences',
                                 'Improve staff comfort and productivity',
                                 'Meet ESG and MEES requirements',
-                                'Funded solutions with no upfront capital',
+                                'Funding that can reduce or remove upfront capital',
                               ].map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                   <CheckCircle className="w-5 h-5 text-unifi-blue flex-shrink-0 mt-1" />
@@ -4740,7 +4740,7 @@ export default function EnergyHubClient() {
                                 'Integrated control and monitoring',
                                 'Enhanced resident and tenant satisfaction',
                                 'Meet diverse compliance requirements',
-                                'Funded solutions with no upfront capital',
+                                'Funding that can reduce or remove upfront capital',
                               ].map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                   <CheckCircle className="w-5 h-5 text-unifi-blue flex-shrink-0 mt-1" />
@@ -4831,7 +4831,7 @@ export default function EnergyHubClient() {
                                 'Flexible lighting for different occasions',
                                 'Improve staff working environments',
                                 'Meet sustainability expectations',
-                                'Funded solutions with no upfront capital',
+                                'Funding that can reduce or remove upfront capital',
                               ].map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                   <CheckCircle className="w-5 h-5 text-unifi-blue flex-shrink-0 mt-1" />
@@ -4920,7 +4920,7 @@ export default function EnergyHubClient() {
                                 'Minimal maintenance and downtime',
                                 'Instant start-up in all conditions',
                                 'Robust and reliable in harsh environments',
-                                'Funded solutions with no upfront capital',
+                                'Funding that can reduce or remove upfront capital',
                               ].map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
                                   <CheckCircle className="w-5 h-5 text-unifi-blue flex-shrink-0 mt-1" />
