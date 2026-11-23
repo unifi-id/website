@@ -7,10 +7,10 @@ import { MotionProvider } from '@/src/components/motion';
 import AnalyticsProvider from '@/src/components/AnalyticsProvider';
 import { buildOrganizationSchema } from '@/src/lib/schema';
 import { basePath } from '@/src/content/unifiAssets';
-
-// Cookieless analytics. Set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. "unifi.id") to activate;
-// while unset, no analytics script is served and event calls no-op safely.
-const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
+// Cookieless analytics. While the domain is unset, no analytics script is served and
+// event calls no-op safely. Shared with the privacy policy so the script and the
+// wording that describes it are gated on the same value.
+import { plausibleDomain, plausibleEnabled } from '@/src/lib/analytics';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -80,12 +80,24 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script type="text/javascript" src="https://secure.leadforensics.com/js/52873.js"></script>
-        {plausibleDomain ? (
-          <script
-            defer
-            data-domain={plausibleDomain}
-            src="https://plausible.io/js/script.tagged-events.js"
-          ></script>
+        {plausibleEnabled ? (
+          <>
+            <script
+              defer
+              data-domain={plausibleDomain}
+              src="https://plausible.io/js/script.tagged-events.js"
+            ></script>
+            {/* The tracker is deferred, so it is not defined yet while the page is
+                still loading. This queue, which is the stub Plausible document for
+                custom events, holds any trackEvent call made before then and the
+                tracker flushes it on load. Without it an early click is dropped. */}
+            <script
+              dangerouslySetInnerHTML={{
+                __html:
+                  'window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}',
+              }}
+            />
+          </>
         ) : null}
         <script
           type="application/ld+json"

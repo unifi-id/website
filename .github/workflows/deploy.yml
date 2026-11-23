@@ -46,6 +46,11 @@ jobs:
       - name: Build (static export)
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+          # Set the repository variable NEXT_PUBLIC_PLAUSIBLE_DOMAIN (Settings,
+          # Secrets and variables, Actions, Variables) to the domain the Plausible
+          # site is registered under. While it is unset this resolves to an empty
+          # string, no analytics script is served, and the build still succeeds.
+          NEXT_PUBLIC_PLAUSIBLE_DOMAIN: ${{ vars.NEXT_PUBLIC_PLAUSIBLE_DOMAIN }}
         run: npm run build
 
       - name: Upload artifact

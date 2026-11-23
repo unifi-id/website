@@ -149,10 +149,10 @@ export const homeContent = {
       {
         title: 'Energy Solutions',
         image: '/unifi-assets/canary/photo-1696074010622-65271d2f423b.webp',
-        description: 'Fully funded LED, heating, and solar upgrades with guaranteed savings and zero upfront costs.',
+        description: 'LED, heating and solar upgrades with funding options that can remove the upfront cost, backed by a clear business case.',
         bullets: [
-          'Zero upfront investment',
-          'Guaranteed energy savings',
+          'Funding that can remove the upfront cost',
+          'Savings backed by a clear business case',
           'Complete project management',
           'Multiple funding options',
         ],

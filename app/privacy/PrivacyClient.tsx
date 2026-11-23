@@ -2,6 +2,7 @@
 import { H1, H2, H3, Body } from "@/src/components/Typography";
 import { Section } from '@/src/components/Section';
 import { ButtonLink } from '@/src/components/ButtonLink';
+import { plausibleEnabled } from '@/src/lib/analytics';
 
 export default function PrivacyClient() {
   return (
@@ -47,6 +48,33 @@ export default function PrivacyClient() {
               <li>To deliver insights through our SaaS platform</li>
               <li>For legal and compliance purposes</li>
             </ul>
+          </div>
+
+          <div>
+            <H2 className="text-2xl font-bold text-gray-900 mb-4">Analytics and Website Visitor Insight</H2>
+            <div className="space-y-4">
+              <Body className="text-gray-700">
+                <strong>Website visitor insight:</strong> we use Lead Forensics, which uses the internet (IP) address of a visit to identify the organisation it came from, not the individual, and shows us which of our pages that organisation viewed. We use this to understand which organisations are interested in our services. Lead Forensics Ltd processes this data on our behalf. See{' '}
+                <a
+                  href="https://leadforensics.com/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-unifi-blue hover:underline font-medium"
+                >leadforensics.com/privacy-policy</a>.
+              </Body>
+              {/* Remove this paragraph if the Plausible trial ends and the script is
+                  taken off the site for good, so the policy does not describe a tool we
+                  no longer use. Until then it appears only when the script does: both
+                  are gated on plausibleEnabled, which reads
+                  NEXT_PUBLIC_PLAUSIBLE_DOMAIN. The site is a static export, so this
+                  resolves at build time and the sentence is absent from the built HTML
+                  while the variable is unset. */}
+              {plausibleEnabled ? (
+                <Body className="text-gray-700">
+                  We also use Plausible Analytics, which counts visits without cookies and without identifying anyone.
+                </Body>
+              ) : null}
+            </div>
           </div>
 
           <div>
