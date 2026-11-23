@@ -61,6 +61,13 @@ export default function PrivacyClient() {
                   className="text-unifi-blue hover:underline font-medium"
                 >leadforensics.com/privacy-policy</a>.
               </Body>
+              {/* Remove this paragraph if the Plausible trial ends and the script is
+                  taken off the site, so the policy does not describe a tool we no
+                  longer use. The script itself is gated on NEXT_PUBLIC_PLAUSIBLE_DOMAIN
+                  in app/layout.tsx. */}
+              <Body className="text-gray-700">
+                We also use Plausible Analytics, which counts visits without cookies and without identifying anyone.
+              </Body>
             </div>
           </div>
 
