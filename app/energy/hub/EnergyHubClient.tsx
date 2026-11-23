@@ -3173,12 +3173,12 @@ export default function EnergyHubClient() {
                           <DollarSign className="w-8 h-8 text-unifi-green" />
                           <H3>Funding Without the Pain</H3>
                         </div>
-                        <Body className="mb-6 font-medium">With energy savings typically exceeding 60%, institutions can often finance the installation through third-party funding at competitive rates.</Body>
+                        <Body className="mb-6 font-medium">With lighting energy reductions of 50 to 80 percent, many organisations can fund the upgrade from the savings, through third-party finance at competitive rates.</Body>
                         <ul className="space-y-4">
                           {
                             [
                               "Finance your LED upgrade without touching your capital budget",
-                              "Third-party funding covers all installation costs",
+                              "Third-party finance can cover the upfront installation cost",
                               "Immediate positive cash flow from month one",
                               "Energy cost reductions exceed financing payments from day one"
                             ].map((item, i) => (
@@ -3200,7 +3200,7 @@ export default function EnergyHubClient() {
                             [
                               "Money redirected into your own infrastructure instead of energy companies",
                               "Improving your estate while reducing costs",
-                              "Most upgrades pay for themselves in less than five years",
+                              "Typical payback of 3 to 7 years",
                               "Savings continue long after the finance term ends"
                             ].map((item, i) => (
                               <li key={i} className="flex gap-3 items-start">
@@ -4279,7 +4279,7 @@ export default function EnergyHubClient() {
 
                         <div className="mt-8">
                           <Body className="text-unifi-gray-dark text-left">
-                            With LED retrofits, schools aren't finding new money - they're redirecting wasted energy spend into brighter classrooms and safer estates that pay for themselves, often in less than five years.
+                            With LED retrofits, schools aren't finding new money - they're redirecting wasted energy spend into brighter classrooms and safer estates that pay for themselves, with typical payback of 3 to 7 years.
                           </Body>
                         </div>
                       </div>

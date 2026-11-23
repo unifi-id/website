@@ -149,7 +149,7 @@ export default function EnergySurveyClient() {
               <ul className="mt-4 space-y-2 text-gray-700 list-disc pl-5">
                 <li>Assessment of energy efficiency opportunities</li>
                 <li>Indicative savings projections</li>
-                <li>Fully funded upgrade options (where applicable)</li>
+                <li>Funding and finance options, where available</li>
                 <li>Implementation timeline planning</li>
               </ul>
             </Card>
