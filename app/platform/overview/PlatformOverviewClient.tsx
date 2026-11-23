@@ -434,7 +434,7 @@ export default function PlatformOverviewClient() {
                   <ul className="space-y-2 text-gray-700 mb-6">
                     <li>• Volume discounts for multiple buildings</li>
                     <li>• Dedicated account management</li>
-                    <li>• Priority support and SLA guarantees</li>
+                    <li>• Priority support</li>
                     <li>• Custom integrations included</li>
                   </ul>
                   <div className="text-green-600 font-semibold mb-6">Contact for pricing</div>
@@ -448,7 +448,7 @@ export default function PlatformOverviewClient() {
                   <Text variant="body" className="mb-6">Pay based on achieved savings and benefits</Text>
                   <ul className="space-y-2 text-gray-700 mb-6">
                     <li>• Share of energy savings achieved</li>
-                    <li>• Performance guarantees included</li>
+                    <li>• Performance tracked and reported</li>
                     <li>• Aligned incentives for optimisation</li>
                     <li>• Risk mitigation for customers</li>
                   </ul>

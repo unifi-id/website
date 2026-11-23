@@ -788,7 +788,7 @@ const nestedSectorTechnologyContent = {
             features: [
               'Volume pricing on equipment',
               'Centralised service contracts',
-              'Trust-wide performance guarantees',
+              'Trust-wide performance tracking and reporting',
               'Phased funding across sites',
             ],
           },
@@ -898,7 +898,7 @@ const nestedSectorTechnologyContent = {
             features: [
               'Volume discounts on equipment',
               'Centralised maintenance contracts',
-              'Group-wide performance guarantees',
+              'Group-wide performance tracking and reporting',
               'Phased funding across the portfolio',
             ],
           },
