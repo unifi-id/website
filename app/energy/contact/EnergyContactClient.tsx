@@ -96,7 +96,7 @@ export default function EnergyContactClient() {
           <H3 className="text-2xl font-bold text-gray-900 mb-8 text-left">Why Choose Unifi.id Energy Solutions?</H3>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 animate-fade-in-up">
-              <H3 className="text-lg font-bold text-gray-900 mb-2">Zero Upfront Cost</H3>
+              <H3 className="text-lg font-bold text-gray-900 mb-2">Funding Options</H3>
               <Body className="text-gray-600">Funding routes that can use projected energy savings to reduce or remove upfront capital, subject to eligibility and project economics.</Body>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 animate-fade-in-up">
