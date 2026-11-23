@@ -87,8 +87,8 @@ export default function GreatDebateClient() {
       {/* Hero */}
       <section className="relative overflow-hidden text-white" style={{ background: NAVY }}>
         <img src="/unifi-assets/education-classroom.webp" alt="" aria-hidden="true"
-             className="absolute inset-0 h-full w-full object-cover opacity-25" />
-        <div className="absolute inset-0" style={{ background: `linear-gradient(90deg, ${NAVY} 30%, rgba(14,28,46,0.75) 100%)` }} aria-hidden="true" />
+             className="absolute inset-0 h-full w-full object-cover" />
+        <div className="absolute inset-0" style={{ background: `linear-gradient(90deg, rgba(14,28,46,0.92) 0%, rgba(14,28,46,0.78) 45%, rgba(14,28,46,0.35) 100%)` }} aria-hidden="true" />
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 pt-36 pb-16 md:pt-44 md:pb-24">
           <p className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em]" style={{ color: '#E0A458' }}>
             <span className="inline-block h-px w-8" style={{ background: '#E0A458' }} aria-hidden="true" />
