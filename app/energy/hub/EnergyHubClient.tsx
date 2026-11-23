@@ -723,7 +723,7 @@ const nestedSectorTechnologyContent = {
               'Salix-approved funding structures',
               'PSDS grants where applicable',
               'Cashflow-neutral delivery models',
-              'No upfront capital requirement',
+              'Funding that can reduce or remove upfront capital',
             ],
           },
           {
@@ -788,7 +788,7 @@ const nestedSectorTechnologyContent = {
             features: [
               'Volume pricing on equipment',
               'Centralised service contracts',
-              'Trust-wide performance guarantees',
+              'Trust-wide performance tracking and reporting',
               'Phased funding across sites',
             ],
           },
@@ -898,7 +898,7 @@ const nestedSectorTechnologyContent = {
             features: [
               'Volume discounts on equipment',
               'Centralised maintenance contracts',
-              'Group-wide performance guarantees',
+              'Group-wide performance tracking and reporting',
               'Phased funding across the portfolio',
             ],
           },
@@ -1174,7 +1174,7 @@ const nestedSectorTechnologyContent = {
               'Portfolio operators need projects that protect capital for other strategic uses.',
             features: [
               'Funded delivery models',
-              'Operational savings from day one',
+              'Savings set out in the business case',
               'Clear long-term energy value',
               'No need for portfolio-wide capital release',
             ],
@@ -1764,7 +1764,7 @@ const nestedSectorTechnologyContent = {
               'Solar installations offer strong returns but often stall because of upfront investment.',
             features: [
               'Funded solution that can reduce or remove the capital requirement, subject to eligibility',
-              'Immediate energy savings from day one',
+              'Savings set out in the business case',
               'Long-term predictable energy costs',
             ],
           },
@@ -1971,7 +1971,7 @@ const nestedSectorTechnologyContent = {
               'Industrial-scale systems can require major upfront capital without the right funding model.',
             features: [
               'Funded deployment, subject to eligibility',
-              'Cost savings from day one',
+              'Savings set out in the business case',
               'Capital preserved for core operations and growth',
             ],
           },
@@ -2262,7 +2262,7 @@ const nestedSectorTechnologyContent = {
               'Funded solutions through Salix, PSDS, and regional grants',
               'Cashflow-neutral terms',
               'EPC-style delivery where appropriate',
-              'No upfront capital requirement',
+              'Funding that can reduce or remove upfront capital',
             ],
           },
           {
@@ -3158,7 +3158,7 @@ export default function EnergyHubClient() {
                         Modern LED systems are far more than simple replacements for old fixtures. They represent a complete transformation of your lighting infrastructure - combining energy efficiency, improved comfort, and dramatically reduced maintenance demands.
                       </Body>
                       <Body className="text-lg leading-relaxed">
-                        While the upfront cost can feel significant, LED projects consistently deliver some of the best returns on investment of any sustainability measure. In many cases, the energy savings alone can fully finance the installation, allowing upgrades to proceed with no upfront capital outlay.
+                        While the upfront cost can feel significant, LED projects consistently deliver some of the best returns on investment of any sustainability measure. In many cases, the energy savings alone can help fund the installation, reducing or removing the upfront capital outlay.
                       </Body>
                     </div>
                   </div>
@@ -3673,10 +3673,10 @@ export default function EnergyHubClient() {
                     </div>
                     <div className="max-w-3xl mx-auto space-y-6">
                       <Body className="text-lg leading-relaxed">
-                        Solar PV and renewable energy systems reduce reliance on the grid, lower electricity costs, and support decarbonisation targets. With third-party funding, organisations can install solar and other renewables with no upfront capital.
+                        Solar PV and renewable energy systems reduce reliance on the grid, lower electricity costs, and support decarbonisation targets. With third-party funding, organisations can reduce or remove the upfront capital needed to install solar and other renewables.
                       </Body>
                       <Body className="text-lg leading-relaxed">
-                        Energy savings and export revenue can fully finance the installation. The savings stay with you, not your supplier - delivering immediate cost reduction and long-term energy security.
+                        Energy savings and export revenue can help fund the installation. The savings stay with you, not your supplier - delivering immediate cost reduction and long-term energy security.
                       </Body>
                     </div>
                   </div>

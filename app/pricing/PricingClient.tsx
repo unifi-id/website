@@ -59,7 +59,7 @@ export default function PricingClient() {
               <ul className="space-y-3 mb-8 text-gray-700">
                 <li>• Volume discounts for multiple buildings</li>
                 <li>• Dedicated account management</li>
-                <li>• Priority support and SLA guarantees</li>
+                <li>• Priority support</li>
                 <li>• Custom integrations included</li>
               </ul>
               <div className="text-green-600 font-semibold mb-6">Contact for pricing</div>
@@ -79,7 +79,7 @@ export default function PricingClient() {
               </Body>
               <ul className="space-y-3 mb-8 text-gray-700">
                 <li>• Share of energy savings achieved</li>
-                <li>• Performance guarantees included</li>
+                <li>• Performance tracked and reported</li>
                 <li>• Aligned incentives for optimisation</li>
                 <li>• Risk mitigation for customers</li>
               </ul>
