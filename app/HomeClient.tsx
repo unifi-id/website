@@ -6,11 +6,13 @@ import CortexSection from '@/src/components/CortexSection';
 import SolutionsSection from '@/src/components/SolutionsSection';
 import SectorsSection from '@/src/components/SectorsSection';
 import CTASection from '@/src/components/CTASection';
+import GreatDebateBanner from '@/src/components/GreatDebateBanner';
 
 export default function HomeClient() {
   return (
     <>
       <HeroSection />
+      <GreatDebateBanner />
       <ChallengeSection />
       <CarbonReportingSection />
       <CortexSection />

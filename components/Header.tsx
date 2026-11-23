@@ -153,6 +153,7 @@ export default function Header() {
       label: 'Energy Solutions',
       children: [
         { href: '/energy/hub', label: 'Energy Hub' },
+        { href: '/great-debate', label: 'The Great Debate' },
         { href: '/energy/technology', label: 'Our Technology' },
         { href: '/energy/carbon-reporting', label: 'Carbon Reporting' },
         { href: '/energy/monitoring', label: 'Energy Monitoring' },
