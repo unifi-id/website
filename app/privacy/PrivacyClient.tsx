@@ -50,6 +50,21 @@ export default function PrivacyClient() {
           </div>
 
           <div>
+            <H2 className="text-2xl font-bold text-gray-900 mb-4">Analytics and Website Visitor Insight</H2>
+            <div className="space-y-4">
+              <Body className="text-gray-700">
+                <strong>Website visitor insight:</strong> we use Lead Forensics, which uses the internet (IP) address of a visit to identify the organisation it came from, not the individual, and shows us which of our pages that organisation viewed. We use this to understand which organisations are interested in our services. Lead Forensics Ltd processes this data on our behalf. See{' '}
+                <a
+                  href="https://leadforensics.com/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-unifi-blue hover:underline font-medium"
+                >leadforensics.com/privacy-policy</a>.
+              </Body>
+            </div>
+          </div>
+
+          <div>
             <H2 className="text-2xl font-bold text-gray-900 mb-4">Business Contacts at Schools and Other Organisations</H2>
             <div className="space-y-4">
               <Body className="text-gray-700">
