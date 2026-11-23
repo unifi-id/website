@@ -26,6 +26,35 @@ type Summary =
   | { ready: true; threshold: number; total: number; state: number; private: number; updatedAt: string;
       questions: Finding[]; quotes: { text: string; by: string }[] };
 
+// Figures checked against the National Audit Office's June 2023 publications
+// on 23 Nov 2026. Keep each one with its source; never add an unsourced figure.
+const STATS = [
+  { figure: '37%', text: 'of emissions from public sector buildings come from the education estate.',
+    source: 'National Audit Office, June 2023. Covers schools and universities.' },
+  { figure: '38%', text: 'of school buildings, around 24,000 of them, are past their estimated design life.',
+    source: 'National Audit Office, Condition of school buildings, June 2023.' },
+  { figure: '700,000', text: 'pupils learn in a school that needs major rebuilding or refurbishment.',
+    source: 'National Audit Office, Condition of school buildings, June 2023.' },
+];
+
+const HEAR = [
+  { title: 'Where things get stuck', dot: '#B5701B', items: [
+    'Waiting for a grant round to open, applying more than once, or putting weeks into a bid that was turned down.',
+    'Waiting for sign-off from your trust, your council or your governors.',
+    'Buying rules: frameworks, how many quotes you need, tender thresholds, and how long all of that takes.',
+    'Not knowing whether a supplier\'s savings figures can be trusted, or how to compare two very different quotes.',
+    'Nobody with the time to run a project alongside the day job.',
+    'Planned upgrades pushed back because something more urgent broke, like a boiler or a roof.',
+    'Uncertainty over whether you are allowed to borrow, lease or pay for work over time.',
+  ] },
+  { title: 'What has worked', dot: '#E0A458', items: [
+    'A project you finished: what it was, how it was paid for and how long it took from idea to done.',
+    'A trust, council or framework process that made it easier.',
+    'Savings you have actually seen on your bills afterwards.',
+    'The one thing you would tell another school that is just starting out.',
+  ] },
+];
+
 const pct = (n: number, d: number) => (d > 0 ? Math.round((100 * n) / d) : 0);
 
 const shareHref = () => {
@@ -57,16 +86,19 @@ export default function GreatDebateClient() {
     <>
       {/* Hero */}
       <section className="relative overflow-hidden text-white" style={{ background: NAVY }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-36 pb-16 md:pt-44 md:pb-24">
+        <img src="/unifi-assets/education-classroom.webp" alt="" aria-hidden="true"
+             className="absolute inset-0 h-full w-full object-cover opacity-25" />
+        <div className="absolute inset-0" style={{ background: `linear-gradient(90deg, ${NAVY} 30%, rgba(14,28,46,0.75) 100%)` }} aria-hidden="true" />
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 pt-36 pb-16 md:pt-44 md:pb-24">
           <p className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.18em]" style={{ color: '#E0A458' }}>
             <span className="inline-block h-px w-8" style={{ background: '#E0A458' }} aria-hidden="true" />
             The Great Debate
           </p>
-          <h1 className="font-display mt-5 text-4xl md:text-6xl font-bold leading-[1.08] tracking-tight">Make your voice heard</h1>
+          <h1 className="font-display mt-5 max-w-3xl text-4xl md:text-6xl font-bold leading-[1.08] tracking-tight">Why do good school energy projects take so long?</h1>
           <p className="mt-6 max-w-2xl text-lg md:text-xl leading-relaxed text-white/85">
-            Schools are told to cut energy use and carbon, but many of the upgrades that would do it, such as better
-            lighting, heating, insulation and solar, keep being delayed. We want to understand why, from the people who
-            actually run schools.
+            Most schools already know where they could save energy. The hard part is getting the work done. We are
+            gathering evidence from the people who run schools about what holds upgrades back, what makes them
+            possible, and what would help, so that government hears it first hand.
           </p>
           <div className="mt-9 flex flex-col sm:flex-row gap-3">
             <a href={SURVEY_URL}
@@ -83,39 +115,89 @@ export default function GreatDebateClient() {
         </div>
       </section>
 
-      {/* Why */}
+      {/* The challenge */}
       <section className="bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 md:py-24 text-[17px] md:text-lg leading-relaxed text-unifi-gray space-y-5">
-          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-unifi-dark">Why we are asking</h2>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-16 md:pt-24 text-[17px] md:text-lg leading-relaxed text-unifi-gray space-y-5">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-unifi-dark">The challenge</h2>
           <p>
-            Many of the upgrades schools would like to make would save money every year. Plenty of schools have
-            already done them. Many more are waiting: for a grant round, a council decision, a trust capital programme,
-            or a buying process that can take longer than the work itself.
+            Every pound a school spends on energy comes out of the same budget as staff, books and trips. Many school
+            buildings still run on old lighting, ageing boilers and poorly insulated walls and windows, so a good share
+            of that money is heating and lighting rooms inefficiently.
           </p>
           <p>
-            The people who run schools know better than anyone what helps and what gets in the way. Business managers,
-            heads, site managers and trust teams deal with it every day, but their experience rarely reaches the people
-            who design the funding and the rules.
+            The upgrades that fix this, such as LED lighting, better heating controls, insulation and solar panels, can
+            pay for themselves over time through lower bills. The difficulty is that the cost arrives up front, in one
+            year, while the savings arrive slowly over many. For a school juggling a tight budget, that timing alone can
+            be enough to stop a sensible project.
           </p>
           <p>
-            The Great Debate asks them directly. We will put the findings, in schools&rsquo; own words, to the
-            Department for Education, HM Treasury and the Department for Energy Security and Net Zero, as practical
-            evidence of what would help schools act sooner. Every school that takes part gets a copy.
+            Energy prices can change quickly, and schools have little control over them. Every unit of energy a school no
+            longer needs is one it never has to pay a higher price for, which makes getting these projects done sooner
+            matter all the more.
           </p>
-          <h3 className="font-display pt-4 text-2xl font-bold tracking-tight text-unifi-dark">We want to hear from every school</h3>
-          <p>
-            That means schools still waiting, and just as much those that have managed to get their upgrades done. If
-            your school has finished a project, how you did it is exactly what other schools need to know.
-          </p>
-          <p>The survey covers five short areas:</p>
-          <ul className="grid gap-2 sm:grid-cols-2 list-none p-0">
-            {['Where you are now', 'Funding and waiting', 'What gets in the way', 'Weighing up a project', 'Your voice, in your own words'].map((t) => (
-              <li key={t} className="flex items-start gap-3 rounded-md bg-unifi-light px-4 py-3 text-unifi-dark">
-                <span className="mt-2 inline-block h-2 w-2 shrink-0 rounded-full" style={{ background: '#E0A458' }} aria-hidden="true" />
-                {t}
+        </div>
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+          <ul className="grid gap-4 md:grid-cols-3 list-none p-0">
+            {STATS.map((x) => (
+              <li key={x.figure} className="rounded-lg p-6 md:p-7 text-white" style={{ background: NAVY }}>
+                <p className="font-display text-5xl md:text-6xl font-bold tracking-tight" style={{ color: '#E0A458' }}>{x.figure}</p>
+                <p className="mt-3 text-base md:text-lg leading-snug text-white/90">{x.text}</p>
+                <p className="mt-4 text-xs text-white/60">{x.source}</p>
               </li>
             ))}
           </ul>
+        </div>
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16 md:pb-24 text-[17px] md:text-lg leading-relaxed text-unifi-gray space-y-5">
+          <p>
+            Three government departments shape what happens next. The Department for Education funds school buildings
+            and sets the buying guidance schools follow. HM Treasury sets the rules on how public money is spent,
+            borrowed and paid back. The Department for Energy Security and Net Zero leads on energy and carbon policy.
+            Schools sit where all three meet, and each department needs to hear what that looks like from the inside.
+            That is what this survey is for.
+          </p>
+          <p>
+            It is not all bad news. Plenty of schools have found a way through, and how they did it is some of the most
+            useful evidence we can gather.
+          </p>
+        </div>
+      </section>
+
+      {/* What we want to hear about */}
+      <section className="bg-unifi-light">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-24">
+          <h2 className="font-display text-3xl md:text-4xl font-bold tracking-tight text-unifi-dark">What we want to hear about</h2>
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
+            {HEAR.map((col) => (
+              <div key={col.title} className="rounded-lg bg-white p-6 md:p-8">
+                <h3 className="font-display text-xl md:text-2xl font-bold tracking-tight text-unifi-dark">{col.title}</h3>
+                <ul className="mt-4 space-y-3 list-none p-0 text-[16px] md:text-[17px] leading-relaxed text-unifi-gray">
+                  {col.items.map((t) => (
+                    <li key={t} className="flex items-start gap-3">
+                      <span className="mt-2.5 inline-block h-2 w-2 shrink-0 rounded-full" style={{ background: col.dot }} aria-hidden="true" />
+                      {t}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 max-w-3xl text-[17px] md:text-lg leading-relaxed text-unifi-gray space-y-5">
+            <p>
+              Whether your school is still waiting, part way through or finished, your answer counts, and the more
+              schools that take part, the more weight the findings carry. We will put them, in schools&rsquo; own words,
+              to the Department for Education, HM Treasury and the Department for Energy Security and Net Zero. Every
+              school that takes part gets a copy.
+            </p>
+            <p>
+              The survey covers five short areas: where you are now, funding and waiting, what gets in the way, weighing
+              up a project, and your own words.
+            </p>
+            <a href={SURVEY_URL}
+               className="inline-flex items-center justify-center rounded-md px-7 py-4 text-lg font-semibold transition hover:brightness-105"
+               style={{ background: '#E0A458', color: NAVY }}>
+              Take the survey &rarr;
+            </a>
+          </div>
         </div>
       </section>
 
