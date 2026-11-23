@@ -10,6 +10,7 @@ const staticRoutes = [
   '/about',
   '/book-demo',
   '/contact',
+  '/great-debate',
   '/partners',
   '/pricing',
   '/privacy',
