@@ -101,7 +101,7 @@ export default function EnergyContactClient() {
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 animate-fade-in-up">
               <H3 className="text-lg font-bold text-gray-900 mb-2">Immediate Savings</H3>
-              <Body className="text-gray-600">Start reducing energy costs from day one with proven technologies.</Body>
+              <Body className="text-gray-600">Savings set out clearly in the business case, using proven technologies.</Body>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 animate-fade-in-up">
               <H3 className="text-lg font-bold text-gray-900 mb-2">Proven Results</H3>

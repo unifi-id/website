@@ -164,7 +164,7 @@ export default function AboutClient() {
                 },
                 {
                   title: "Decarbonisation & Energy Efficiency",
-                  desc: "Cashflow-positive LED, heating, and controls upgrades that pay for themselves through savings."
+                  desc: "LED, heating, and controls upgrades with funding options that can remove the upfront cost."
                 }
               ].map((item, index) => (
                 <div key={index} className="flex gap-4 items-start bg-white p-6 rounded-xl shadow-sm">
