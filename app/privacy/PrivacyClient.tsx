@@ -2,6 +2,7 @@
 import { H1, H2, H3, Body } from "@/src/components/Typography";
 import { Section } from '@/src/components/Section';
 import { ButtonLink } from '@/src/components/ButtonLink';
+import { plausibleEnabled } from '@/src/lib/analytics';
 
 export default function PrivacyClient() {
   return (
@@ -62,12 +63,17 @@ export default function PrivacyClient() {
                 >leadforensics.com/privacy-policy</a>.
               </Body>
               {/* Remove this paragraph if the Plausible trial ends and the script is
-                  taken off the site, so the policy does not describe a tool we no
-                  longer use. The script itself is gated on NEXT_PUBLIC_PLAUSIBLE_DOMAIN
-                  in app/layout.tsx. */}
-              <Body className="text-gray-700">
-                We also use Plausible Analytics, which counts visits without cookies and without identifying anyone.
-              </Body>
+                  taken off the site for good, so the policy does not describe a tool we
+                  no longer use. Until then it appears only when the script does: both
+                  are gated on plausibleEnabled, which reads
+                  NEXT_PUBLIC_PLAUSIBLE_DOMAIN. The site is a static export, so this
+                  resolves at build time and the sentence is absent from the built HTML
+                  while the variable is unset. */}
+              {plausibleEnabled ? (
+                <Body className="text-gray-700">
+                  We also use Plausible Analytics, which counts visits without cookies and without identifying anyone.
+                </Body>
+              ) : null}
             </div>
           </div>
 

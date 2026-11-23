@@ -1,4 +1,20 @@
 /**
+ * Single source of truth for whether cookieless analytics is switched on.
+ *
+ * Set NEXT_PUBLIC_PLAUSIBLE_DOMAIN (e.g. "unifi.id") to activate. Trimmed so a
+ * variable that exists but holds only whitespace fails safe rather than rendering
+ * a script tag with an empty data-domain. The value is inlined at build time, so
+ * in a static export both the script tag and the privacy policy wording resolve
+ * when the site is built, not in the browser.
+ *
+ * Everything that depends on Plausible being present must read these two values,
+ * so the script and the policy that describes it can never disagree.
+ */
+export const plausibleDomain = (process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || '').trim();
+
+export const plausibleEnabled = plausibleDomain !== '';
+
+/**
  * Event names are fixed by the Energy Solutions implementation brief (section 16).
  * Keep them stable — reports and any downstream dashboards key off these strings.
  */
