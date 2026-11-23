@@ -1174,7 +1174,7 @@ const nestedSectorTechnologyContent = {
               'Portfolio operators need projects that protect capital for other strategic uses.',
             features: [
               'Funded delivery models',
-              'Operational savings set out clearly in the business case',
+              'Savings set out in the business case',
               'Clear long-term energy value',
               'No need for portfolio-wide capital release',
             ],
@@ -1764,7 +1764,7 @@ const nestedSectorTechnologyContent = {
               'Solar installations offer strong returns but often stall because of upfront investment.',
             features: [
               'Funded solution that can reduce or remove the capital requirement, subject to eligibility',
-              'Energy savings set out clearly in the business case',
+              'Savings set out in the business case',
               'Long-term predictable energy costs',
             ],
           },
@@ -1971,7 +1971,7 @@ const nestedSectorTechnologyContent = {
               'Industrial-scale systems can require major upfront capital without the right funding model.',
             features: [
               'Funded deployment, subject to eligibility',
-              'Cost savings set out clearly in the business case',
+              'Savings set out in the business case',
               'Capital preserved for core operations and growth',
             ],
           },
