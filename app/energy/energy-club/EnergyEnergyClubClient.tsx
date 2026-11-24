@@ -1,11 +1,11 @@
 'use client';
 import { H1, H2, H3, Body } from "@/src/components/Typography";
-import { ButtonLink } from '@/src/components/ButtonLink';
 import { Section } from '@/src/components/Section';
 import Image from 'next/image';
 import { pickUnifiPlaceholder } from '@/src/content/unifiAssets';
 import { CheckCircle, Building2, Factory, Users, School, Leaf, Shield } from 'lucide-react';
 import RelatedEnergyServices from '@/src/components/RelatedEnergyServices';
+import EnergyClubJoinForm from './EnergyClubJoinForm';
 
 export default function EnergyEnergyClubClient() {
   const heroImage = pickUnifiPlaceholder('hero', 'energy-club');
@@ -30,6 +30,9 @@ export default function EnergyEnergyClubClient() {
             <Body className="text-lg md:text-xl text-white/85 max-w-3xl animate-fade-in-up">
               This Year: the Unifi.id Energy Club brings together simpler energy buying, clearer carbon reporting, and practical support without the usual complexity. It is open to all non-domestic customers, completely free to join, and designed to help you save money with no commitment and no upfront cost.
             </Body>
+            <div className="mt-8 animate-fade-in-up">
+              <a href="#join" className="inline-block px-8 py-4 text-lg font-medium rounded-sm bg-white text-unifi-dark hover:bg-gray-100 transition-colors">Join free</a>
+            </div>
           </div>
         </div>
       </Section>
@@ -104,7 +107,7 @@ export default function EnergyEnergyClubClient() {
       </Section>
 
       <Section backgroundColor="gray">
-        <div className="max-w-3xl mx-auto px-6 text-left">
+        <div id="join" className="max-w-3xl mx-auto px-6 text-left scroll-mt-24">
           <H2 className="text-2xl font-bold text-gray-900 mb-4">Join the Energy Club</H2>
           <Body className="mb-8 text-gray-600">
             Joining is completely free for all non-domestic customers. There is no commitment, no joining fee, and no pressure to switch until you are ready.
@@ -112,9 +115,11 @@ export default function EnergyEnergyClubClient() {
           <Body className="mb-8 text-gray-600">
             If you want a simpler way to buy energy, strengthen carbon reporting, or start shaping a carbon action plan, this is a low-friction place to begin.
           </Body>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <ButtonLink href="/energy/contact">Join Free</ButtonLink>
-            <ButtonLink href="/energy/hub" variant="secondary">Back to Energy Hub</ButtonLink>
+          <Body className="mb-6 text-gray-600">
+            Join below and we will email you a link to add your energy details when it suits you: who supplies you, what you pay and when your contract ends.
+          </Body>
+          <div className="rounded-xl border border-gray-100 bg-white p-6">
+            <EnergyClubJoinForm />
           </div>
         </div>
       </Section>
