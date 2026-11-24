@@ -113,7 +113,7 @@ export default function PrivacyClient() {
                 <a href="mailto:energyclub@unifi.id" className="text-unifi-blue hover:underline font-medium">energyclub@unifi.id</a>.
               </Body>
               <Body className="text-gray-700">
-                <strong>Who sees it.</strong> Your energy details and bills are seen only by our directors. We will not pass them to any supplier or broker without asking you first. If you choose to sign a letter of authority, we use it only to request your contract and usage details from the supplier it names.
+                <strong>Who sees it.</strong> Your energy details and bills are kept private and seen only by the small Unifi ID team who run the Energy Club. We will not pass them to any supplier or broker without asking you first. If you choose to sign a letter of authority, we use it only to request your contract and usage details from the supplier it names.
               </Body>
               <Body className="text-gray-700">
                 <strong>How long we keep it.</strong> While you are a member, and for up to 24 months after we last had any contact with you.
