@@ -14,7 +14,7 @@ export default function EnergyEnergyClubClient() {
     <>
 <Section className="relative overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0 z-0">
-          <Image src={heroImage} alt="Energy Club hero image" fill priority className="object-cover" />
+          <Image src={heroImage} alt="Electricity pylons crossing green countryside" fill priority className="object-cover" />
           <div className="absolute inset-0 bg-black/60" />
           <div className="absolute inset-0 bg-gradient-to-br from-unifi-green/15 via-transparent to-unifi-blue/15" />
         </div>
