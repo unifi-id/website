@@ -3676,7 +3676,7 @@ export default function EnergyHubClient() {
                         Solar PV and renewable energy systems reduce reliance on the grid, lower electricity costs, and support decarbonisation targets. With third-party funding, organisations can reduce or remove the upfront capital needed to install solar and other renewables.
                       </Body>
                       <Body className="text-lg leading-relaxed">
-                        Energy savings and export revenue can help fund the installation. The savings stay with you, not your supplier - delivering immediate cost reduction and long-term energy security.
+                        Energy savings and export revenue can help fund the installation. The savings stay with you, not your supplier, delivering long-term energy security.
                       </Body>
                     </div>
                   </div>
