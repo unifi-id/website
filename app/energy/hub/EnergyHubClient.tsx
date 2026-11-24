@@ -1749,7 +1749,7 @@ const nestedSectorTechnologyContent = {
         benefitsHeading: 'Unifi.id helps office buildings deliver:',
         benefits: [
           'Funded solar PV with battery storage and smart energy management',
-          'Cashflow-positive projects generating immediate savings',
+          'Projects that can be funded from savings',
           'Significant on-site renewable generation reducing grid dependence',
           'Enhanced ESG performance and green building credentials',
           '25+ year asset life with long-term value',
@@ -1801,7 +1801,7 @@ const nestedSectorTechnologyContent = {
         benefits: [
           'Funded solar installations tuned to retail operating patterns',
           'Maximised self-consumption during trading hours',
-          'Immediate cost savings with cashflow-positive delivery',
+          'Cost savings with funding options that can remove the upfront cost',
           'Enhanced corporate sustainability credentials',
           'Long-term energy cost predictability',
         ],
@@ -2456,7 +2456,7 @@ const nestedSectorTechnologyContent = {
         benefits: [
           'Funded solar PV across council estates',
           'On-site generation that reduces grid dependence and costs',
-          'Cashflow-positive delivery with immediate operational savings',
+          'Delivery that can be funded from operational savings',
           'Significant carbon reduction supporting net zero commitments',
           'Visible climate leadership for communities',
         ],
@@ -2507,7 +2507,7 @@ const nestedSectorTechnologyContent = {
         benefits: [
           'Funded solar installations across healthcare facilities',
           'Enhanced resilience for critical 24/7 operations',
-          'Cashflow-positive projects that protect care budgets',
+          'Projects that can be funded from savings, protecting care budgets',
           'Significant carbon reduction for NHS net zero goals',
           'Battery storage for backup capability',
         ],
@@ -3945,7 +3945,7 @@ export default function EnergyHubClient() {
                               {
                                 [
                                   "Funded LED lighting upgrades across entire estates",
-                                  "Cashflow-positive projects paid from operational savings",
+                                  "Projects that can be funded from operational savings",
                                   "Phased LED modernisation that avoids academic disruption",
                                   "Verifiable energy and carbon reductions for ESG",
                                   "VAT recovery on qualifying works to boost net ROI"
@@ -4064,7 +4064,7 @@ export default function EnergyHubClient() {
                               {
                                 [
                                   "Funded LED lighting upgrades across school estates",
-                                  "Cashflow-positive projects paid from operational savings",
+                                  "Projects that can be funded from operational savings",
                                   "Improved learning environments with better light quality",
                                   "Reduced energy bills and carbon footprint",
                                   "Enhanced safety and security through improved visibility"
@@ -4140,7 +4140,7 @@ export default function EnergyHubClient() {
                               {
                                 [
                                   "Funded LED lighting upgrades for diverse learning spaces",
-                                  "Cashflow-positive projects paid from operational savings",
+                                  "Projects that can be funded from operational savings",
                                   "Improved lighting quality for enhanced learning and practical training",
                                   "Significant reductions in energy consumption and maintenance costs",
                                   "Modernized facilities to attract and retain students"
@@ -4217,7 +4217,7 @@ export default function EnergyHubClient() {
                             <ul className="space-y-4">
                               {[
                                 'Funded LED lighting upgrades across classrooms and campuses',
-                                'Cashflow-positive projects paid from operational savings, not school budgets',
+                                'Projects that can be funded from operational savings, not school budgets',
                                 'Phased installations timed around school hours and holidays to avoid disruption',
                                 'Verifiable carbon reductions to meet regulatory and Ofsted-linked sustainability standards',
                               ].map((item, i) => (
@@ -5106,7 +5106,7 @@ export default function EnergyHubClient() {
                             <ul className="space-y-4">
                               {[
                                 'Funded LED lighting upgrades across clinical and non-clinical areas',
-                                'Cashflow-positive projects paid from operational savings, protecting patient care budgets',
+                                'Projects that can be funded from operational savings, protecting patient care budgets',
                                 'Superior lighting quality supporting patient recovery and staff wellbeing',
                                 'Reduced maintenance burden freeing estates teams for critical tasks',
                                 'Significant carbon reduction supporting NHS net zero commitments',
@@ -5192,7 +5192,7 @@ export default function EnergyHubClient() {
                             <ul className="space-y-4">
                               {[
                                 'Funded LED lighting upgrades across government estate, subject to eligibility',
-                                'Cashflow-positive projects with transparent, auditable funding structures',
+                                'Projects that can be funded from savings with transparent, auditable funding structures',
                                 'Rapid deployment supporting ministerial commitments and policy objectives',
                                 'Significant carbon reduction demonstrating climate leadership',
                                 'Comprehensive energy reporting for transparency and accountability',
@@ -5278,7 +5278,7 @@ export default function EnergyHubClient() {
                             <ul className="space-y-4">
                               {[
                                 'Funded LED lighting upgrades across operational and administrative facilities',
-                                'Cashflow-positive projects paid from energy savings, protecting frontline budgets',
+                                'Projects that can be funded from energy savings, protecting frontline budgets',
                                 'Superior lighting reliability critical for 24/7 emergency operations',
                                 'Instant-on LED technology ensuring immediate full light output when needed',
                                 'Reduced maintenance burden freeing estates teams for critical tasks',
