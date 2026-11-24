@@ -100,7 +100,7 @@ export default function EnergyContactClient() {
               <Body className="text-gray-600">Funding routes that can use projected energy savings to reduce or remove upfront capital, subject to eligibility and project economics.</Body>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 animate-fade-in-up">
-              <H3 className="text-lg font-bold text-gray-900 mb-2">Immediate Savings</H3>
+              <H3 className="text-lg font-bold text-gray-900 mb-2">Measured Savings</H3>
               <Body className="text-gray-600">Savings set out clearly in the business case, using proven technologies.</Body>
             </div>
             <div className="bg-gray-50 p-6 rounded-xl border border-gray-100 animate-fade-in-up">
