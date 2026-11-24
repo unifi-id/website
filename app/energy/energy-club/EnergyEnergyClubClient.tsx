@@ -3,7 +3,7 @@ import { H1, H2, H3, Body } from "@/src/components/Typography";
 import { Section } from '@/src/components/Section';
 import Image from 'next/image';
 import { pickUnifiPlaceholder } from '@/src/content/unifiAssets';
-import { CheckCircle, Building2, Factory, Users, School, Leaf, Shield } from 'lucide-react';
+import { CheckCircle, Building2, Factory, Users, School, Lock } from 'lucide-react';
 import RelatedEnergyServices from '@/src/components/RelatedEnergyServices';
 import EnergyClubJoinForm from './EnergyClubJoinForm';
 
@@ -28,7 +28,7 @@ export default function EnergyEnergyClubClient() {
               Free to join for all non-domestic customers
             </div>
             <Body className="text-lg md:text-xl text-white/85 max-w-3xl animate-fade-in-up">
-              This Year: the Unifi.id Energy Club brings together simpler energy buying, clearer carbon reporting, and practical support without the usual complexity. It is open to all non-domestic customers, completely free to join, and designed to help you save money with no commitment and no upfront cost.
+              The Unifi ID Energy Club is a simpler, fairer way for organisations to buy energy. Join free, tell us when your contract ends, and when we find a better rate we will show you. You choose whether to take it.
             </Body>
             <div className="mt-8 animate-fade-in-up">
               <a href="#join" className="inline-block px-8 py-4 text-lg font-medium rounded-sm bg-white text-unifi-dark hover:bg-gray-100 transition-colors">Join free</a>
@@ -39,16 +39,36 @@ export default function EnergyEnergyClubClient() {
 
       <Section backgroundColor="gray">
         <div className="max-w-7xl mx-auto px-6">
+          <H2 className="text-3xl font-bold text-gray-900 mb-8 text-left">How it works</H2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { title: "Join in a minute", desc: "Your name, organisation and email. That is all we need to start." },
+              { title: "Add your energy details when it suits you", desc: "A recent bill has everything we ask for, or simply upload it and we will read it for you." },
+              { title: "Take it or pass", desc: "When your renewal comes round, we show you the rate we can get and how it compares. If you pass, you owe us nothing. If you take it, our clear monthly fee applies for as long as you are on a club rate, including each time you renew through us. You keep your own contract with the supplier, and the club never adds an exit fee." }
+            ].map((item, i) => (
+              <div key={i} className="bg-white p-6 rounded-xl border border-gray-100 animate-fade-in-up">
+                <div className="w-9 h-9 rounded-full bg-unifi-dark text-white font-semibold flex items-center justify-center mb-4">{i + 1}</div>
+                <H3 className="font-bold text-gray-900 mb-2">{item.title}</H3>
+                <Body className="text-gray-600 text-sm">{item.desc}</Body>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Section>
+
+      <Section>
+        <div className="max-w-7xl mx-auto px-6">
           <H2 className="text-3xl font-bold text-gray-900 mb-8 text-left">What members get</H2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Lower energy costs", desc: "Benefit from stronger buying power and clearer routes to long-term savings." },
-              { title: "Clearer carbon reporting", desc: "Use better energy data to strengthen carbon reporting and support your carbon action plan." },
-              { title: "Straightforward pricing", desc: "See transparent pricing and supplier options without hidden broker conflicts." },
-              { title: "Flexible support", desc: "Choose the level of guidance you need, from a simple switch review to wider planning support." },
-              { title: "No fee to join", desc: "Membership is completely free, with no commitment, no threshold, and no upfront cost." }
+              { title: "A free review of what you pay", desc: "We look at your unit rates, standing charges and contract terms, and tell you how they compare." },
+              { title: "A heads-up before renewal", desc: "We contact you well before your contract ends with the rate we can get, so renewal never catches you out." },
+              { title: "Buying together", desc: "We are building the club now. The more organisations that join, the stronger our position with suppliers. We aim to group members with similar needs to buy together across England, Scotland and Wales." },
+              { title: "No supplier commissions", desc: "We don't take commission from energy suppliers, so we have no reason to favour one over another. Each time you take up a deal we find, a clear monthly fee applies, agreed with you before you commit. If you pass, you pay nothing." },
+              { title: "Straight answers", desc: "Questions about your bills, contracts or meters, answered plainly by the Unifi ID team." },
+              { title: "Free to join", desc: "No joining fee and no obligation to switch. Join now and you will be among the first members we work with." }
             ].map((item, i) => (
-              <div key={i} className="bg-white p-6 rounded-xl border border-gray-100 flex gap-4 animate-fade-in-up">
+              <div key={i} className="bg-gray-50 p-6 rounded-xl border border-gray-100 flex gap-4 animate-fade-in-up">
                 <CheckCircle className="w-6 h-6 text-unifi-green flex-shrink-0 mt-1" />
                 <div>
                   <H3 className="font-bold text-gray-900 mb-2">{item.title}</H3>
@@ -60,7 +80,7 @@ export default function EnergyEnergyClubClient() {
         </div>
       </Section>
 
-      <Section>
+      <Section backgroundColor="gray">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12">
             <div>
@@ -84,41 +104,26 @@ export default function EnergyEnergyClubClient() {
               <Body className="mt-4 text-gray-600 italic">If you are a non-domestic customer, you can join. No minimum size, no sector restriction, and no spend threshold.</Body>
             </div>
             <div>
-              <H2 className="text-2xl font-bold text-gray-900 mb-6">Support for carbon reporting and action</H2>
-              <div className="space-y-4">
-                <div className="flex gap-3 items-start">
-                  <Leaf className="w-6 h-6 text-unifi-green flex-shrink-0 mt-1" />
-                  <div>
-                    <H3 className="font-bold text-gray-900 mb-1">Clearer carbon reporting</H3>
-                    <Body className="text-gray-600 text-sm">Use better consumption insight and supply choices to make carbon reporting easier to manage and explain.</Body>
-                  </div>
-                </div>
-                <div className="flex gap-3 items-start">
-                  <Shield className="w-6 h-6 text-unifi-green flex-shrink-0 mt-1" />
-                  <div>
-                    <H3 className="font-bold text-gray-900 mb-1">A simpler path to action</H3>
-                    <Body className="text-gray-600 text-sm">Get practical support when you are ready to turn reporting into a carbon action plan and lower-cost delivery.</Body>
-                  </div>
-                </div>
+              <H2 className="text-2xl font-bold text-gray-900 mb-6">Your details stay with us</H2>
+              <div className="flex gap-3 items-start">
+                <Lock className="w-6 h-6 text-unifi-green flex-shrink-0 mt-1" />
+                <Body className="text-gray-600">Your energy details are seen only by Unifi ID&rsquo;s directors. We use them to compare your costs and advise you, and we never pass them to a supplier unless you ask us to act for you.</Body>
               </div>
             </div>
           </div>
         </div>
       </Section>
 
-      <Section backgroundColor="gray">
+      <Section>
         <div id="join" className="max-w-3xl mx-auto px-6 text-left scroll-mt-24">
           <H2 className="text-2xl font-bold text-gray-900 mb-4">Join the Energy Club</H2>
-          <Body className="mb-8 text-gray-600">
-            Joining is completely free for all non-domestic customers. There is no commitment, no joining fee, and no pressure to switch until you are ready.
-          </Body>
-          <Body className="mb-8 text-gray-600">
-            If you want a simpler way to buy energy, strengthen carbon reporting, or start shaping a carbon action plan, this is a low-friction place to begin.
+          <Body className="mb-4 text-gray-600">
+            Joining is free for any non-domestic customer. There is no joining fee and no obligation to switch.
           </Body>
           <Body className="mb-6 text-gray-600">
             Join below and we will email you a link to add your energy details when it suits you: who supplies you, what you pay and when your contract ends.
           </Body>
-          <div className="rounded-xl border border-gray-100 bg-white p-6">
+          <div className="rounded-xl border border-gray-100 bg-gray-50 p-6">
             <EnergyClubJoinForm />
           </div>
         </div>
