@@ -107,7 +107,7 @@ export default function EnergyEnergyClubClient() {
               <H2 className="text-2xl font-bold text-gray-900 mb-6">Your details stay with us</H2>
               <div className="flex gap-3 items-start">
                 <Lock className="w-6 h-6 text-unifi-green flex-shrink-0 mt-1" />
-                <Body className="text-gray-600">Your energy details are seen only by Unifi ID&rsquo;s directors. We use them to compare your costs and advise you, and we never pass them to a supplier unless you ask us to act for you.</Body>
+                <Body className="text-gray-600">Your energy details are kept private and seen only by the small Unifi ID team who run the Energy Club. We use them to compare your costs and advise you, and never pass them to a supplier unless you ask us to act for you.</Body>
               </div>
             </div>
           </div>
