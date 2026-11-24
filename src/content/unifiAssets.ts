@@ -62,7 +62,7 @@ export const imageBySeed: Record<string, string> = {
   'cortex-platform': '/unifi-assets/canary/photo-1691766383671-a23baffc63a1.webp',
   'display-energy-certificates': '/unifi-assets/card-1.webp',
   'energy-clamp-meters': '/unifi-assets/card-3.webp',
-  'energy-club': '/unifi-assets/corporate/photo-1557804506-d8017c1e4856.webp',
+  'energy-club': '/unifi-assets/energy-club-pylons.webp',
   'energy-contact': '/unifi-assets/corporate/photo-1610387853988-7a1623efb207.webp',
   'energy-funding': '/unifi-assets/card-11.webp',
   'energy-hub': '/unifi-assets/card-6.webp',
