@@ -103,6 +103,25 @@ export default function PrivacyClient() {
           </div>
 
           <div>
+            <H2 className="text-2xl font-bold text-gray-900 mb-4">Energy Club Members</H2>
+            <div className="space-y-4">
+              <Body className="text-gray-700">
+                <strong>What we hold.</strong> The details you give when you join (your name, job title, organisation, work email and phone, postcode, type of organisation and number of sites) and the energy details you choose to add afterwards: suppliers, contract end dates, prices, usage, meter numbers and any bills you upload.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>Why we use it.</strong> To run your membership: to compare what you pay, advise you on your options and keep in touch about the club. You asked to join, and you can leave at any time by replying to any Energy Club email or emailing{' '}
+                <a href="mailto:energyclub@unifi.id" className="text-unifi-blue hover:underline font-medium">energyclub@unifi.id</a>.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>Who sees it.</strong> Your energy details and bills are seen only by our directors. We will not pass them to any supplier or broker without asking you first. If you choose to sign a letter of authority, we use it only to request your contract and usage details from the supplier it names.
+              </Body>
+              <Body className="text-gray-700">
+                <strong>How long we keep it.</strong> While you are a member, and for up to 24 months after we last had any contact with you.
+              </Body>
+            </div>
+          </div>
+
+          <div>
             <H2 className="text-2xl font-bold text-gray-900 mb-4">Data Sharing</H2>
             <Body className="text-gray-700 mb-4">
               We may share your data with trusted service providers and subcontractors who assist in delivering our services, and with legal or regulatory bodies when required by law.
