@@ -2470,7 +2470,7 @@ const nestedSectorTechnologyContent = {
               'Strong business cases still stall when capital budgets are not available.',
             features: [
               'Funded solution that can reduce or remove the capital requirement, subject to eligibility',
-              'Immediate savings that protect service budgets',
+              'Savings that protect service budgets',
               '25+ year asset life with long-term value',
             ],
           },
